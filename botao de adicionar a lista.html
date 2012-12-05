@@ -1,0 +1,38 @@
+
+
+<!--
+	Basta colocar o script e o css nos seus arquivos e o HTML onde vocÊ quer que apareça na página de produto
+	para ver um exemplo funcionando basta entrar em algum produto da loja: http://develop-millie.vtexcommerce.com.br/
+-->
+
+
+<!--
+	Script 
+-->
+<script>
+$('.addList').click(function(){
+	$('.giftlist').fadeIn();
+	return false;
+});
+</script>
+
+
+<!--
+	CSS
+-->
+<style type="text/css">
+.addList {background:#52c8cc;float: left;font-size: 12px;height: 22px;margin:10px 0 5px 12px; padding: 5px 0 0 35px; text-align: center; width: 162px;}
+#produto .giftlist {clear: both; display: none; float: left; font-size: 12px; margin: 0; padding: 0 5px; text-align: center; width: 220px;}
+.giftlistinsertsku-lists li {border-bottom: 1px solid #9E9E9E; margin: 0 0 10px; padding: 0 0 5px;}
+.giftlistinsertsku-lists li a {display: block;float: left;font-weight: bold;margin: 0 0 3px;width: 100%;}
+</style>
+
+
+<!--
+	HTML
+-->
+<div id="addList">
+<a class="addList" href="#">Adicionar à lista de desejo</a>
+<vtex.cmc:giftListInsertSku/>
+</div>
+
